@@ -8,10 +8,8 @@ string[] Arr3Chars(string[] arr)
     Console.Write("");
     for (int i = 0; i < arr.Length; i++)
     {
-        Console.WriteLine(arr[i].Length);
         if (arr[i].Length < 4) count++;
     }
-    Console.WriteLine(count);
     string[] arr2 = new string[count];
     count = 0;
     for (int i = 0; i < arr.Length; i++)
@@ -21,7 +19,6 @@ string[] Arr3Chars(string[] arr)
             count++;
         }
     }
-    Console.WriteLine(count);
     return arr2;
 }
 
@@ -39,5 +36,3 @@ string[] strArray = Console.ReadLine().Split();
 PrintArray(strArray);
 PrintArray(Arr3Chars(strArray));
 Console.ReadLine();
-
-/*--------------------------------------------*/
